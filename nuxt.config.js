@@ -69,15 +69,15 @@ export default {
     extendRoutes(routes, resolve) {
       routes.push({
         name: 'category',
-        path: '/category',
-        alias: ['/suv', '/sedan', '/sport'],
+        path: '/suv',
+        alias: ['/sedan', '/sport'],
         component: resolve(__dirname, 'pages/category.vue')
       })
 
       routes.push({
         name: 'directory',
-        path: '/directory',
-        alias: ['/acura', '/ford', '/bmw'],
+        path: '/acura',
+        alias: ['/ford', '/bmw'],
         component: resolve(__dirname, 'pages/directory.vue')
       })
 

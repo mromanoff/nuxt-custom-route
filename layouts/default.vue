@@ -2,9 +2,7 @@
   <div>
     <div class="nav">
       <nuxt-link to="/">Home</nuxt-link> |
-      <nuxt-link to="/blah">404</nuxt-link> |
-      <nuxt-link to="/category">Category</nuxt-link> |
-      <nuxt-link to="/directory">Directory</nuxt-link>
+      <nuxt-link to="/blah">404</nuxt-link>
     </div>
 
     <p>&nbsp;</p>
