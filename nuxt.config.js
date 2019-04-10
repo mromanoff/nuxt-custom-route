@@ -36,7 +36,9 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '~/modules/routes'
+
   ],
   /*
    ** Axios module configuration
@@ -62,30 +64,6 @@ export default {
       //     exclude: /(node_modules)/
       //   })
       // }
-    }
-  },
-
-  router: {
-    extendRoutes(routes, resolve) {
-      routes.push({
-        name: 'category',
-        path: '/suv',
-        alias: ['/sedan', '/sport'],
-        component: resolve(__dirname, 'pages/category.vue')
-      })
-
-      routes.push({
-        name: 'directory',
-        path: '/acura',
-        alias: ['/ford', '/bmw'],
-        component: resolve(__dirname, 'pages/directory.vue')
-      })
-
-      routes.push({
-        name: 'notFound',
-        path: '*',
-        component: resolve(__dirname, 'pages/404.vue')
-      })
     }
   }
 }
